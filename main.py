@@ -4,8 +4,9 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/')
-def index():
+# Routes are called path in FastAPI
+@app.get('/')   # this is path operation decorator
+def index():    # this is path operation function
     return {
         'name': 'Kazi Ehsanul Mubin',
         'age': '27',
